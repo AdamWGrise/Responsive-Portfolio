@@ -2,20 +2,26 @@
 /*****  TAGS   *****/
 /*******************/
 
-body{
-    height:100%;
-    color:#777777;
-    font-family:'Arial','Helvetica Neue', Helvetica, sans-serif;
-    background-color:#002200;
-    background-image:url("../images/prism.png");
-    margin:0;
-    position:relative;
+body {
+    height: 100%;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    background-color: #002200;
+    background-image: url("../images/prism.png");
+    margin: 0;
+    position: relative;
 }
+
 /* Body background pattern credited to Michal at toptal.com Subtle Patterns. */
 
 /* I don't know the best way to take care of properties on things where I have like a Title div and an h1 inside it; better to place the properties on the h1 or the Title div? I tend to put the font-size and family stuff in the header tags, and everything else in the divs. *shrug*/
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Georgia, Times, 'Times New Roman', serif;
     text-decoration: none;
 }
@@ -31,18 +37,19 @@ h2 {
 /* Contact form fields */
 textarea {
     width: 99%;
-    margin:4px 0 10px;
-    color:#357874;
+    margin: 4px 0 10px;
+    color: #357874;
     border: 2px solid #ccc;
-    transition:0.25s;
+    transition: 0.25s;
 }
 
 textarea:hover {
-    border-color:#4aaaa5;
+    border-color: #4aaaa5;
 }
 
 /* Disallow changing the size of the contact boxes... */
-textarea.name, textarea.email {
+textarea.name,
+textarea.email {
     resize: none;
 }
 
@@ -50,26 +57,27 @@ h1,
 h2,
 h3,
 p {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 p:last-child {
     margin-bottom: 0;
-  }
+}
 
 /* Links; <3 transitions */
 a {
-    transition:.3s;
-    display:inline-block;
+    transition: .3s;
+    display: inline-block;
 }
 
-a:link, a:visited {
-    color:#888;
-    text-decoration:none;
+a:link,
+a:visited {
+    color: #888;
+    text-decoration: none;
 }
 
 a:hover {
-    color:#4aaaa5;
+    color: #4aaaa5;
 }
 
 a:after {
@@ -79,16 +87,16 @@ a:after {
     display: block;
     background: #4aaaa5;
     position: relative;
-    transition:.3s;
-    bottom:31px;
+    transition: .3s;
+    bottom: 31px;
 }
 
 a:hover:after {
-    width:100%;
+    width: 100%;
 }
 
 a:active {
-    color:#000;
+    color: #000;
 }
 
 /*******************/
@@ -98,48 +106,49 @@ a:active {
 /* .... HEADER CLASSES .... */
 
 .header {
-    padding:0;
-    margin:0;
-    background-color:#ffffff;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
     border-bottom: 2px solid #999999;
     height: 76px;
 }
 
 .header-content {
-    width:960px;
+    width: 960px;
     margin: 0 auto;
     padding: 0;
-    height:76px;
+    height: 76px;
 }
 
 .nav-link {
-    width:100px;
+    width: 100px;
     display: inline-block;
     text-align: center;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 /* .... MAIN CONTENT CLASSES .... */
 
 .main-content {
-    width:896px;
-    background-color:#ffffff;
+    width: 896px;
+    background-color: #ffffff;
     border: #dddddd 2px solid;
-    margin:30px auto 88px;
-    padding:30px;
-    min-height:100%;
+    margin: 30px auto 88px;
+    padding: 30px;
+    min-height: 100%;
 }
 
 .main-content-label {
-    color:#4aaaa5;
+    color: #4aaaa5;
 }
 
 /* Thanks for css-tricks.com for the inspiration for the hr decoration. But then Haydn told us hrs suck, so I made this one instead. It doesn't deal with the border on an existing div - it's just its own div so I can set its width and do other fun stuff with it. Gradients are easier to do without having to use webkits and stuff. */
 .better-hr {
-    margin:10px 0;
-    height:2px;
-    width:100%;
-    background-image:linear-gradient(to right,#89B9B6,#073a35,#89B9B6);;
+    margin: 10px 0;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(to right, #89B9B6, #073a35, #89B9B6);
+    ;
 }
 
 .profile-pic {
@@ -149,17 +158,17 @@ a:active {
 }
 
 .portfolio-img {
-    display:inline-block;
-    padding:0;
+    display: inline-block;
+    padding: 0;
     border: 2px solid #142c2a;
     margin: 10px;
     width: 270px;
-    transition:.5s;
+    transition: .5s;
 }
 
 /* Love these transitions */
 .portfolio-link:hover {
-    transform:scale(1.15);
+    transform: scale(1.15);
 }
 
 /* Hides the underline effect that other links have */
@@ -169,21 +178,21 @@ a:active {
 
 /* That Submit button though */
 button.submit {
-    background-color:#4aaaa5;
+    background-color: #4aaaa5;
     border: 4px solid #fff;
-    color:#fff;
+    color: #fff;
     padding: 12px 26px;
     font-size: 1.25rem;
     border-radius: 10px;
 }
 
 button.submit:hover {
-    transition:.25s;
+    transition: .25s;
     border: 4px solid #439792;
 }
 
 button.submit:active {
-    transition:none;
+    transition: none;
     border: 4px solid #2c615c;
     background-color: #3d9690;
 }
@@ -191,17 +200,17 @@ button.submit:active {
 /* .... FOOTER CLASSES .... */
 
 .footer {
-    background-color:#666666;
+    background-color: #666666;
     color: #bbbbbb;
     font-size: 0.7rem;
     border-top: 8px solid #4aaaa5;
-    height:50px;
-    line-height:50px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
     width: 100%;
     position: fixed;
-    bottom:0;
-    left:0;
+    bottom: 0;
+    left: 0;
 }
 
 /***************/
@@ -209,29 +218,158 @@ button.submit:active {
 /***************/
 
 #title {
-    background-color:#4aaaa5;
-    color:#ffffff;
+    background-color: #4aaaa5;
+    color: #ffffff;
     min-width: 200px;
     width: 30%;
     height: 76px;
     text-align: center;
     line-height: 76px;
-    display:inline-block;
-    transition:none;
+    display: inline-block;
+    transition: none;
 }
-    
+
 #title:hover:after {
-    width:0%; /* Prevent the underlining for the title link */
+    width: 0%;
+    /* Prevent the underlining for the title link */
 }
 
 #nav-section {
-    min-width:330px;
-    width:69%;
-    height:76px;
-    line-height:76px;
-    text-align:right;
-    color:#89B9B6;
-    display:inline-block;
-    position:relative;
-    left:25px;
+    min-width: 330px;
+    width: 69%;
+    height: 76px;
+    line-height: 76px;
+    text-align: right;
+    color: #89B9B6;
+    display: inline-block;
+    position: relative;
+    left: 25px;
+}
+
+
+/*************************/
+/***** MEDIA QUERIES *****/
+/*************************/
+
+@media screen and (max-width:980px) {
+    .main-content {
+        width: 480px;
+        float: left;
+        margin: 30px auto 88px 40px;
+    }
+
+    .header-content {
+        width: auto;
+    }
+
+    #title {
+        float: left;
+        min-width: 200px;
+        width: auto;
+        margin-left: 40px;
+        position: static;
+    }
+
+    #nav-section {
+        float: right;
+        position: static;
+        width: auto;
+        margin-right: 40px;
+    }
+
+    .portfolio-link {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .portfolio-img {
+        display: inline-block;
+        padding: 0;
+        border: 2px solid #142c2a;
+        margin: 0;
+        width: 100%;
+        transition: .5s;
+    }
+    
+    /* Love these transitions */
+    .portfolio-link:hover {
+        transform: scale(1.0);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-content {
+        width: auto;
+        float:none;
+        margin: 30px 15px 88px 15px;
+    }
+
+    .header-content {
+        width: auto;
+    }
+
+    #title {
+        float: left;
+        min-width: 200px;
+        width: auto;
+        margin-left: 10px;
+        position: static;
+    }
+
+    #nav-section {
+        float: right;
+        position: static;
+        width: auto;
+        margin-right: 15px;
+    }
+}
+
+
+@media screen and (max-width:640px) {
+    .main-content {
+        width: auto;
+        float: none;
+        margin: 30px 15px 88px 15px;
+    }
+
+    .header {
+        height: 120px;
+    }
+
+    .header-content {
+        float:none;
+        margin:none;
+        display:block;
+    }
+
+    #title {
+        width: 100%;
+        margin: 0;
+        position: static;
+        float:none;
+    }
+
+    #nav-section {
+        position: static;
+        width: 100%;
+        margin: 0;
+        float:none;
+        text-align:center;
+        line-height:46px;
+    }
+
+    a:after {
+        bottom: 15px;
+    }
+
+    .profile-pic {
+        float:none;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .portfolio-link {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
