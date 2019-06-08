@@ -3,49 +3,77 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Local JS -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Add a favicon -->
+    <link rel="icon" type="image/png" href="assets/images/adamapple.ico">
+
     <title>Contact - Adam G</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-content">
-            <a id="title" href="index.html">
-                <h1>Adam Grise</h1>
-            </a>
-            <div id="nav-section">
-                <div class="nav-link">
-                    <a href="index.html">About</a>
-                </div>
-                |
-                <div class="nav-link">
-                    <a href="portfolio.html">Portfolio</a>
-                </div>
-                |
-                <div class="nav-link">
-                    <a href="contact.html">Contact</a>
+    <div class='container'>
+    
+
+        <header class="header">
+            <div class="header-content">
+                <a id="title" href="index.html">
+                    <h1>Adam Grise</h1>
+                </a>
+                <div id="nav-section">
+                    <div class="nav-link">
+                        <a href="index.html">About</a>
+                    </div>
+                    |
+                    <div class="nav-link">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+                    |
+                    <div class="nav-link">
+                        <a href="contact.html">Contact</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <section class="main-content">
-        <div class="main-content-label">
-            <h2>Contact Me</h2>
-            <div class="better-hr"></div>
-        </div>
-        <label for="name">Name</label><br>
-        <textarea class="name" placeholder="Doesn't have to be your real name!" name="name" rows="1"></textarea><br>
-        <label for="email">Email</label><br>
-        <textarea class="email" placeholder="This kinda has to be a real email, though; e.g., adam@gmail.com"
-            name="name" rows="1"></textarea><br>
-        <label for="message">Message</label><br>
-        <textarea class="message" placeholder="Place your message here." name="name" rows="10"></textarea><br>
-        <button onclick="location.href='index.html'" type="submit" class="submit" name="contactsubmit"
-            type="button">Submit</button>
-    </section>
+        <section class="main-content">
+            <div class="main-content-label">
+                <h2>Contact Me</h2>
+                <div class="better-hr"></div>
+            </div>
+            <label for="name">Name</label><br>
+            <textarea class="name" placeholder="Doesn't have to be your real name!" name="name" rows="1"></textarea><br>
+            <label for="email">Email</label><br>
+            <textarea class="email" placeholder="This kinda has to be a real email, though; e.g., adam@gmail.com"
+                name="name" rows="1"></textarea><br>
+            <label for="message">Message</label><br>
+            <textarea class="message" placeholder="Place your message here." name="name" rows="10"></textarea><br>
+            <button onclick="location.href='index.html'" type="submit" class="submit" name="contactsubmit"
+                type="button">Submit</button>
+        </section>
+
+    </div>
 
     <footer class="footer">
         <p>© 2019 Adam Grise</p>
