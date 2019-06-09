@@ -3,68 +3,119 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <!-- Local JS -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/adamapple.ico">
+
     <title>Portfolio - Adam G</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-content">
-            <a id="title" href="index.html">
-                <h1>Adam Grise</h1>
-            </a>
-            <div id="nav-section">
-                <div class="nav-link">
-                    <a href="index.html">About</a>
-                </div>
-                |
-                <div class="nav-link">
-                    <a href="portfolio.html">Portfolio</a>
-                </div>
-                |
-                <div class="nav-link">
-                    <a href="contact.html">Contact</a>
-                </div>
+    <div id="bgDiv"></div>
+    <div class='container'>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <span class="navbar-brand">Adam Grise</span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class='row'>
+            <div class='col-12'>
+                <!-- Page content -->
+                <section class="main-content">
+                    <div class="main-content-label">
+                        <h2>Portfolio</h2>
+                        <div class="better-hr"></div>
+                    </div>
+                    <div class='portfolio-list'>
+                        <a class="portfolio-link" href="https://adamwgrise.github.io/Train-Scheduler"
+                            target="_blank"><img class="pulsate-fwd  portfolio-img"
+                                src="assets/images/portfolio-thumb-train.png" alt="Train Scheduler"></a>
+                        <a class="portfolio-link" href="https://adamwgrise.github.io/gifTastic" target="_blank"><img
+                                class="pulsate-fwd portfolio-img" src="assets/images/portfolio-thumb-giphy.png"
+                                alt="GIF Search"></a>
+                        <a class="portfolio-link" href="https://adamwgrise.github.io/TriviaGame" target="_blank"><img
+                                class="pulsate-fwd portfolio-img" src="assets/images/portfolio-thumb-game-trivia.png"
+                                alt="Trivia Game"></a>
+                        <a class="portfolio-link" href="https://adamwgrise.github.io/Crystal-Thief" target="_blank"><img
+                                class="pulsate-fwd portfolio-img" src="assets/images/portfolio-thumb-game-crystalThief.png"
+                                alt="Crystal Thief Game"></a>
+                        <a class="portfolio-link" href="https://adamwgrise.github.io/Word-Guess-Game"
+                            target="_blank"><img class="pulsate-fwd portfolio-img"
+                                src="assets/images/portfolio-thumb-game-hangman.png" alt="Hangman Game"></a>
+                        <a class="portfolio-link" href="https://www.youtube.com/playlist?list=PL48A887365D270C3A"
+                            target="_blank"><img class="pulsate-fwd portfolio-img" src="assets/images/portfolio-thumb-mpc.png"
+                                alt="YouTube - Adam's Mario Paint Videos"></a>
+                        <a class="portfolio-link" href="https://youtu.be/tL8dV_kY8rQ" target="_blank"><img
+                                class="pulsate-fwd portfolio-img" src="assets/images/portfolio-thumb-tutorials.png"
+                                alt="Adam's Video Tutorial Sample"></a>
+                        <a class="portfolio-link" href="https://github.com/AdamWGrise" target="_blank"><img
+                                class="pulsate-fwd portfolio-img" src="assets/images/portfolio-thumb-github.png"
+                                alt="Adam's GitHub Profile"></a>
+                        <a class="portfolio-link" href="https://www.twitch.tv/adamapple" target="_blank"><img
+                                class="pulsate-fwd portfolio-img" src="assets/images/portfolio-thumb-twitch.png"
+                                alt="Adam's Twitch Channel"></a>
+                        <a class="portfolio-link" href="https://patents.google.com/patent/US10114609B2/en"
+                            target="_blank"><img class="pulsate-fwd portfolio-img" src="assets/images/portfolio-thumb-patent.png"
+                                alt="Patent - Computing interface for users with disabilities"></a>
+                    </div>
+                </section>
+
+                <!-- Note to self for thumbnail text: With original portfolio-thumb-maker.pdn at 1440x1080; invert white text, gaussian blur at radius 8, then 4 dupes and merges. Font at 108. -->
+                <!-- End page content -->
             </div>
         </div>
-    </header>
-
-    <section class="main-content">
-        <div class="main-content-label">
-            <h2>Portfolio</h2>
-            <div class="better-hr"></div>
-        </div>
-        <a class="portfolio-link" href="https://adamwgrise.github.io/Train-Scheduler" target="_blank"><img class="portfolio-img"
-                src="assets/images/portfolio-thumb-train.png" alt="Train Scheduler"></a>
-        <a class="portfolio-link" href="https://adamwgrise.github.io/gifTastic" target="_blank"><img class="portfolio-img"
-                src="assets/images/portfolio-thumb-giphy.png" alt="GIF Search"></a>
-        <a class="portfolio-link" href="https://adamwgrise.github.io/TriviaGame" target="_blank"><img class="portfolio-img"
-                src="assets/images/portfolio-thumb-game-trivia.png" alt="Trivia Game"></a>
-        <a class="portfolio-link" href="https://adamwgrise.github.io/Crystal-Thief" target="_blank"><img class="portfolio-img"
-                src="assets/images/portfolio-thumb-game-crystalThief.png" alt="Crystal Thief Game"></a>
-        <a class="portfolio-link" href="https://adamwgrise.github.io/Word-Guess-Game" target="_blank"><img class="portfolio-img"
-                src="assets/images/portfolio-thumb-game-hangman.png" alt="Hangman Game"></a>
-        <a class="portfolio-link" href="https://www.youtube.com/playlist?list=PL48A887365D270C3A" target="_blank"><img class="portfolio-img"
-                src="assets/images/portfolio-thumb-mpc.png" alt="YouTube - Adam's Mario Paint Videos"></a>
-        <a class="portfolio-link" href="https://youtu.be/tL8dV_kY8rQ" target="_blank"><img class="portfolio-img"
-                src="assets/images/portfolio-thumb-tutorials.png" alt="Adam's Video Tutorial Sample"></a>
-        <a class="portfolio-link" href="https://github.com/AdamWGrise" target="_blank"><img class="portfolio-img"
-                src="assets/images/portfolio-thumb-github.png" alt="Adam's GitHub Profile"></a>
-        <a class="portfolio-link" href="https://www.twitch.tv/adamapple" target="_blank"><img class="portfolio-img"
-                src="assets/images/portfolio-thumb-twitch.png" alt="Adam's Twitch Channel"></a>
-        <a class="portfolio-link" href="https://patents.google.com/patent/US10114609B2/en" target="_blank"><img class="portfolio-img"
-                src="assets/images/portfolio-thumb-patent.png"
-                alt="Patent - Computing interface for users with disabilities"></a>
-    </section>
-
-    <!-- Note to self for thumbnail text: With original portfolio-thumb-maker.pdn at 1440x1080; invert white text, gaussian blur at radius 8, then 4 dupes and merges. Font at 108. -->
-
-    <footer class="footer">
-        <p>© 2019 Adam Grise</p>
-    </footer>
+    </div>
 </body>
-
+<footer class="footer">
+    <div class='container'>
+        <p>© 2019 Adam Grise</p>
+    </div>
+</footer>
 
 </html>
