@@ -1,2 +1,2 @@
-# Responsive-Portfolio
-New version of the basic portfolio to be responsive to screen size.
+# Portfolio
+Primary version of portfolio - this will be the one updated moving forward.
