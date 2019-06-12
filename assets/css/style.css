@@ -101,7 +101,7 @@ a:active {
 }
 
 .profile-pic {
-    width: 15%;
+    width: 100%;
     float: left;
     margin: 0 10px 3px 0;
 }
